@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Layout from './core/Layout';
 
-function App() {
+
+
+const App = () => {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout >
+      <div className="col-md-6 offset-md-3 text-center">
+
+        <h1 className="p-5">MERN TEMPLATE HOME</h1>
+        <hr />
+        <p className="lead">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore officiis, dolorum quasi voluptate obcaecati consequuntur accusantium dolor dicta non beatae a saepe modi, quas ex?
+      </p>
+      </div>
+    </Layout>
   );
-}
+};
 
 export default App;
